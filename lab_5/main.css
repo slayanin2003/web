@@ -1,0 +1,221 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: rgb(22,13,185);
+    background: linear-gradient(0deg, rgba(22,13,185,1) 0%, rgba(17,127,184,1) 25%, rgba(0,160,244,1) 49%);
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.logoP{
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+}
+
+.offer {
+    width: 700px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.title_span{
+    font-size: 48px;
+    letter-spacing: 2px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+}
+
+.offer_text{
+    font-size: 16px;
+    width: 350px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.btn{
+    width: 260px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(255, 196, 0);
+    transition: all 0.5px;
+    position: relative;
+    animation-name: btn_color;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes btn_color{
+    0%{
+        background-color: red;
+    }
+    28%{
+        background-color: orange;
+    }
+    42%{
+        background-color: yellow;
+    }
+    56%{
+        background-color: green;
+    }
+    70%{
+        background-color: skyblue;
+    }
+    84%{
+        background-color: blue;
+    }
+    100%{
+        background-color: purple;
+    }
+}
+
+.btn:hover{
+    background-color: rgb(255, 226, 132);
+    box-shadow: 10px 10px 10px grey;
+}
+
+.header_img{
+    width: 480px;
+}
+
+/* Вторая секция */
+.main{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 320px;
+}
+.main_title{
+    font-size: 30px;
+    text-align: center;   
+}
+
+.main_block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blocks{
+    text-align: center;
+    width: 25%;
+    transition-duration: 3s;
+}
+
+.blocks:hover{
+    background-color: aqua;
+    width: 45%;
+    height: 250px;
+}
+
+.blocks img{
+    margin-bottom: 30px;
+    animation-name: rotating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+}
+
+@keyframes rotating {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+/* Третья секция */
+.form {
+    background-color: rgb(215, 231, 231);
+    height: 450px;
+}
+
+.form_title{
+    padding-top: 40px;
+    font-size: 30px;
+    text-align: center;  
+}
+.form_block{
+    width: 1100px;
+    display: flexbox;
+    justify-content: space-around;
+}
+
+input{
+    width: 350px;
+    height: 30px;
+    transition-duration:  3s;
+}
+
+input:hover{
+    width: 450px;
+    height: 45px;
+}
+
+.form_input{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.input_form{
+    padding-left: 20px;
+}
+
+.btn_block{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form_btn{
+    width: 375px;
+    height: 50px;
+    background-color: rgb(255, 196, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: rgb(255, 196, 0);
+    transition: all 0.5px;
+}
+
+.form_btn:hover{
+    background-color: rgb(255, 226, 132);
+    box-shadow: 10px 10px 10px grey;
+}
+/* Четвертая секция */
+.end {
+    background: rgb(22,13,185);
+    background: linear-gradient(0deg, rgba(22,13,185,1) 0%, rgba(17,127,184,1) 25%, rgba(0,160,244,1) 49%);
+    height: 75px;
+}
+.end_text{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
