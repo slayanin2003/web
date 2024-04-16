@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <img class="logo" src="img\logo.png" alt="pic">
+            <div class="wrapper">
+                <div class="offer">
+                    <h1 class="title">С помощью 
+                        <br>нас вы сомжете создать то, о чем</h1>
+                    <span class="title_span">желаете!</span>
+                    <p class="offer_text">Наши возможности + опыт позволят 
+                        Вам достичь огромного успеха. Мы верим верим в
+                        вас! И знаем это на все 100%. Вас не остановить!
+                    </p>
+                    <a href="# "class="btn">Узнать больше ...</a>
+                </div>
+                <img class="header_img" src="img\header-img.png" alt="pic">
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <h2 class="main_title">Что Вам необходимо?</h2>
+            <div class="main_block">
+                <div class="blocks">
+                    <img src="img\f3.png" alt="pic">
+                    <h3>Первый блок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="blocks">
+                    <img src="img\f4.png" alt="pic">
+                    <h3>Второй блок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</p>
+                </div>
+                <div class="blocks">
+                    <img src="img\f5.png" alt="pic">
+                    <h3>Третий блок</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product"> 
+        <div class="container"> 
+            <h2 class="section__title">Форма заявки на обучение</h2> 
+            <form name="second" action="#" method="post" enctype="multipart/form-data"> 
+                <div class="form-group"> 
+                    <label for="name">Ваше имя:</label> 
+                    <input type="text" id="name"> 
+                    <div class="error-message"></div>
+                </div> 
+                <div class="form-group"> 
+                    <label for="phone">Ваш телефон:</label> 
+                    <input type="tel" id="phone"> 
+                    <div class="error-message"></div> 
+                </div> 
+                <div class="form-group"> 
+                    <label for="adres">Адрес филлиала автошколы:</label> 
+                    <input type="text" id="adres"> 
+                    <div class="error-message"></div> 
+                </div> 
+                <div class="form-group"> 
+                    <label for="datetime">Запись на консультацию:</label> 
+                    <input type="datetime-local" id="datetime"> 
+                    <div class="error-message"></div> 
+                </div> 
+                <div class="form-group"> 
+                    <label for="col">Количество желаемых часов практики:</label> 
+                    <input type="number" id="col"> 
+                    <div class="error-message"></div> 
+                </div> 
+                <input type="submit" class="send" value="Отправить заказ!"> 
+            </form> 
+        </div> 
+    </section> 
+
+    <section class="form">
+        <div class="container">
+            <h2 class="form_title">Форма заказа обратного звонка</h2>
+            <div class="form_block">
+                <div class="form_input">
+                    <input class="input_form" type="text" placeholder="Имя" required minlength="2">
+                </div>
+                <div class="form_input">
+                    <input class="input_form" type="email" placeholder="Введите свой email" required>
+                </div>
+                <div class="form_input">
+                    <input class="input_form" type="tel" placeholder="Телефон" required minlength="12">
+                </div>
+                <div class="form_input">
+                    <input class="input_form" type="text" placeholder="Какая тема Вас инетересует?" required maxlength="30">
+                </div>
+                <div class="btn_block">
+                <a href="#" class="form_btn">Отправить запрос!</a>
+                </div>  
+             </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="end">
+        <div class="container">
+            <div class="end_text">
+                <a>Все на этом сайте защищено</a>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
