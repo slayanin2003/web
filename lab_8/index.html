@@ -60,17 +60,17 @@
             <form name="second" action="#" method="post" enctype="multipart/form-data"> 
                 <div class="form-group"> 
                     <label for="name">Ваше имя:</label> 
-                    <input type="text" id="name"> 
+                    <input type="text" id="name" placeholder="Имя"> 
                     <div class="error-message"></div>
                 </div> 
                 <div class="form-group"> 
                     <label for="phone">Ваш телефон:</label> 
-                    <input type="tel" id="phone"> 
+                    <input type="tel" id="phone" placeholder="+7 999 999 99 99"> 
                     <div class="error-message"></div> 
                 </div> 
                 <div class="form-group"> 
                     <label for="adres">Адрес филлиала автошколы:</label> 
-                    <input type="text" id="adres"> 
+                    <input type="text" id="adres" placeholder="ул. Пушкина 8"> 
                     <div class="error-message"></div> 
                 </div> 
                 <div class="form-group"> 
@@ -80,10 +80,10 @@
                 </div> 
                 <div class="form-group"> 
                     <label for="col">Количество желаемых часов практики:</label> 
-                    <input type="number" id="col"> 
+                    <input type="number" id="col" placeholder="24"> 
                     <div class="error-message"></div> 
                 </div> 
-                <input type="submit" class="send" value="Отправить заказ!"> 
+                <input type="submit" class="send" value="Отправить заявку!"> 
             </form> 
         </div> 
     </section> 
@@ -93,19 +93,19 @@
             <h2 class="form_title">Форма заказа обратного звонка</h2>
             <div class="form_block">
                 <div class="form_input">
-                    <input class="input_form" type="text" placeholder="Имя" required minlength="2">
+                    <input class="input_form" id="text-form" type="text" placeholder="Имя" required minlength="2">
                 </div>
                 <div class="form_input">
-                    <input class="input_form" type="email" placeholder="Введите свой email" required>
+                    <input class="input_form" id="email-form" type="email" placeholder="Введите свой email" required>
                 </div>
                 <div class="form_input">
-                    <input class="input_form" type="tel" placeholder="Телефон" required minlength="12">
+                    <input class="input_form" id="tel-form" type="tel" placeholder="Телефон" required minlength="12">
                 </div>
                 <div class="form_input">
-                    <input class="input_form" type="text" placeholder="Какая тема Вас инетересует?" required maxlength="30">
+                    <input class="input_form" id="text-form2" type="text" placeholder="Какая тема Вас инетересует?" required maxlength="30">
                 </div>
                 <div class="btn_block">
-                <a href="#" class="form_btn">Отправить запрос!</a>
+                    <input type="submit" class="send" value="Отправить заказ!"> 
                 </div>  
              </div>
         </div>

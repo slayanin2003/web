@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
+
     const form = document.querySelector('form[name="second"]');
     const numbers = /^\d+$/;
+
     form.addEventListener("submit", function(event) {
         event.preventDefault();
 
@@ -30,13 +32,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     if (value === "") {
                         errorMessage.textContent = "Заполните поле";
                         formIsValid = false;
-                    } else if (!/^[а-яёa-zA-Z\s]+$/.test(value)) {
-                        errorMessage.textContent = "Введите только русские или английские буквы";
+                    } else if (!/^[А-ЯЁа-яё]+$/.test(value)) {
+                        errorMessage.textContent = "Введите только русские буквы";
                         formIsValid = false;
                     }
                     break;
                 case "tel":
-                    if (value === "" || !value.match(numbers)) {
+                    if (value === "" || /^\+\d{1,3}\s?\(\d{3}\)\s?\d{3}-\d{2}-\d{2}$/.test(value)) {
                         errorMessage.textContent = "Введите корректный номер телефона";
                         formIsValid = false;
                     }
@@ -81,7 +83,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
 
 document.addEventListener("DOMContentLoaded", function() {
     const headerImg = document.querySelector(".header_img");
