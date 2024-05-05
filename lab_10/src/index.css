@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block__wrapper {
+    width: 20%;
+    text-align: center;
+}
+
+.block__text {
+    text-align: center;
+    color: gray;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.block__image {
+    margin-bottom: 15px;
+}
+
+
+.necessities {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.necessities__title {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
